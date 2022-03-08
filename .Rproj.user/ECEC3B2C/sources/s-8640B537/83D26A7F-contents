@@ -1,9 +1,9 @@
-Feature 1: Putting in x amount of money will generate x returns at closing today. 
+# Feature 1: Putting in x amount of money will generate x returns at closing today. 
 
 library(shiny)
 
 ui <- fluidPage( 
-  numericInput("num", label = h3("Numeric input"), value = 1),
+  numericInput("num", label = h3("Amount Invested"), value = 1),
   
   hr(),
   fluidRow(column(3, verbatimTextOutput("value")))
